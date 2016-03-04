@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.brian.rep">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Load" />
+        <activity android:name=".Repersent" />
+        <activity
+            android:name=".Repersent2"
+            android:label="@string/title_activity_repersent2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".people"
+            android:label="@string/title_activity_people"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".people2"
+            android:label="@string/title_activity_people2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".people3"
+            android:label="@string/title_activity_people3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".people4"
+            android:label="@string/title_activity_people4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <service android:name=".PhoneToWatchService" />
+        <!-- Listeners are special services that need to be declared like below, as BIND_LISTENER -->
+
+        <service android:name=".PhoneListenerService"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

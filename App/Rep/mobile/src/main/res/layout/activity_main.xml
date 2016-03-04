@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.brian.rep.MainActivity"
+    android:background="@drawable/mapmap">
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:id="@+id/zipcode"
+        android:background="#ffffff"
+        android:text="Enter your zip"
+        android:textSize="16dp"/>
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:text="GO"
+        android:textSize="16dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/button"
+        android:background="#EB5757"
+        android:textAlignment="center"
+        android:layout_alignParentRight="true"
+        android:onClick="zipcode"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:id="@+id/button2"
+        android:background="#D70000"
+        android:drawableTop="@android:drawable/ic_menu_mylocation"
+        android:layout_marginLeft="240dp"
+        android:onClick="current"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.brian.rep.MainActivity"
+
+    >
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Zip Code: 94704, Berkeley, CA"
+        android:textAlignment="center"
+        android:paddingTop="5dp"
+        android:id="@+id/textView2"
+        android:textColor="#56CCF2"
+        android:textSize="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="REPERSENTATIVES"
+        android:textAlignment="center"
+        android:paddingTop="5dp"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="#FFFFFF"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Know who repersents you"
+        android:textAlignment="center"
+        android:paddingTop="1dp"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:textColor="#2F80ED"
+        android:textSize="10dp"
+        android:background="#FFFFFF"/>
+
+    <RelativeLayout
+        android:layout_width="600dp"
+        android:layout_height="1080dp"
+        android:layout_marginTop="67dp"
+        android:background="#2F80ED"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginTop="263dp"
+            android:layout_marginLeft="250dp"
+            android:id="@+id/imageView6"
+            android:background="@drawable/dropdownicon"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginTop="283dp"
+            android:layout_marginLeft="250dp"
+            android:id="@+id/imageView6"
+            android:background="@drawable/dropdownicon"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginTop="223dp"
+            android:layout_marginLeft="250dp"
+            android:id="@+id/imageView"
+            android:background="@drawable/dropdownicon"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginTop="243dp"
+            android:layout_marginLeft="250dp"
+            android:id="@+id/imageView2"
+            android:background="@drawable/dropdownicon"/>
+
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView"
+            android:background="@drawable/barbara"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Senator Barbara Boxer"
+            android:id="@+id/textView3"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Democratic Party     Term Ends Jan 3, 2016"
+            android:textSize="12dp"
+
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Committee"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Environment "
+            android:textSize="12dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Foreign Relations"
+            android:textSize="12dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Ethics"
+            android:textSize="12dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Public Works"
+            android:textSize="12dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Committee"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="S. 2554: A bill to amend section 875(c) "
+            android:textSize="10dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="330dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" of title 12 United States Code."
+            android:textSize="10dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:layout_marginLeft="260dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Feb 11, 2016"
+            android:textSize="10dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="S. 2555: A bill to amend section 475(c) "
+            android:textSize="10dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="360dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" of title 13 United States Code."
+            android:textSize="10dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="260dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Feb 13, 2016"
+            android:textSize="10dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="S. 2663: A bill to amend section 685(c) "
+            android:textSize="10dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="390dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" of title 20 United States Code."
+            android:textSize="10dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:layout_marginLeft="260dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Feb 13, 2016"
+            android:textSize="10dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="410dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="S. 2682: A bill to amend section 685(c) "
+            android:textSize="10dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="420dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" of title 22 United States Code."
+            android:textSize="10dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="410dp"
+            android:layout_marginLeft="260dp"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Feb 21, 2016"
+            android:textSize="10dp"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/imageView"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
