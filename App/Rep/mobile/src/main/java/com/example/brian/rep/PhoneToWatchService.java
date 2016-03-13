@@ -44,6 +44,7 @@ public class PhoneToWatchService extends Service {
         Bundle extras = intent.getExtras();
         final String from = extras.getString("from");
         final String zip = extras.getString("zip");
+        final String names = extras.getString("names");
         // Send the message with the cat name
         new Thread(new Runnable() {
             @Override
@@ -52,7 +53,7 @@ public class PhoneToWatchService extends Service {
                 mApiClient.connect();
                 //now that you're connected, send a massage with the cat name
                 Log.i("DID YOU KNOW", "WE SEND MESSAGES");
-                sendMessage("/" + from, zip);
+                sendMessage("/" + from, names);
             }
         }).start();
         return START_STICKY;

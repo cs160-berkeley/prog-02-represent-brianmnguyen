@@ -5,9 +5,7 @@ import android.util.Log;
 import com.google.android.gms.wearable.MessageEvent;
 import com.google.android.gms.wearable.WearableListenerService;
 import java.nio.charset.StandardCharsets;
-/**
- * Created by Smita on 3/1/2016.
- */
+
 public class WatchListenerService extends WearableListenerService {
     // In PhoneToWatchService, we passed in a path, either "/FRED" or "/LEXY"
     // These paths serve to differentiate different phone-to-watch messages

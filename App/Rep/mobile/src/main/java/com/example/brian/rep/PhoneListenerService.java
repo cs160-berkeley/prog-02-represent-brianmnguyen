@@ -26,7 +26,7 @@ public class    PhoneListenerService extends WearableListenerService {
             Intent intent = new Intent(this, people.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             //you need to add this flag since you're starting a new activity from a service
-            intent.putExtra("zip", "94704");
+            intent.putExtra("LOCATION", "94704");
             Log.d("T", "about to start watch MainActivity with Dianne ");
             startActivity(intent);
         } else if ( messageEvent.getPath().equalsIgnoreCase( senator2 ) ) {
@@ -34,7 +34,7 @@ public class    PhoneListenerService extends WearableListenerService {
             Intent intent = new Intent(this, MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             //you need to add this flag since you're starting a new activity from a service
-            intent.putExtra("zip", "94401");
+            intent.putExtra("LOCATION", "94401");
             Log.d("T", "about to start watch MainActivity with MAINNN BITCHEZ");
             startActivity(intent);
 

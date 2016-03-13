@@ -31,7 +31,7 @@ import java.util.Random;
 
 public class MainActivity extends WearableActivity  {
 
-
+    String[] Peeps;
     //---The images to display---
     //---Here we use a 2D array for row/column indexing---
     private SensorManager mSensorManager;
@@ -60,8 +60,10 @@ public class MainActivity extends WearableActivity  {
         final Resources res = getResources();
         final GridViewPager pager = (GridViewPager) findViewById(R.id.pager);
 
-        String zip1 = getIntent().getStringExtra("LOCATION");
+        Intent in = getIntent();
+        String zip1 = in.getStringExtra("LOCATION");
         Log.i("THIS IS IT WE", "ARE SO FINISHED HERE OMG " + zip1);
+        Peeps = zip1.split(";");
         //---Assigns an adapter to provide the content for this pager---
         pager.setAdapter(new ImageAdapter(this, zip1));
         DotsPageIndicator dotsPageIndicator = (DotsPageIndicator) findViewById(R.id.page_indicator);
@@ -80,7 +82,7 @@ public class MainActivity extends WearableActivity  {
                 Random rn = new Random();
                 Integer number = (int) rn.nextFloat() * 10000;
 
-                sendIntent.putExtra("zip", number.toString());
+                sendIntent.putExtra("zip", "94401");
                 Log.i("FUCK", "LAWL" + number.toString());
                 startService(sendIntent);
             }
@@ -95,7 +97,9 @@ public class MainActivity extends WearableActivity  {
         public ImageAdapter(final Context context, String zip1) {
             mContext = context;
             zip = zip1;
+            Log.i("DID WE EVEN", "LIKE REALLY GE HERE" + zip);
         }
+
 
         @Override
         public int getRowCount() {
@@ -104,7 +108,7 @@ public class MainActivity extends WearableActivity  {
 
         @Override
         public int getColumnCount(int i) {
-            return 4;
+            return Peeps.length;
         }
 
         //---Go to current column when scrolling up or down (instead of default column 0)---
@@ -116,11 +120,13 @@ public class MainActivity extends WearableActivity  {
         //---Return our car image based on the provided row and column---
         @Override
         public Object instantiateItem(ViewGroup viewGroup, int row, int col) {
+            Log.i("DID WE EVEN", "LIKE REALLY GE HERE" + zip);
 
             TextView textView;
             textView = new TextView(mContext);
-            if (col == 0 ){
-                textView.setText("Dianne Feinstein\nDemocratic Party");
+            if (col < Peeps.length-1){
+                String[] ary2 = Peeps[col].split(":");
+                textView.setText( ary2[2]+"\n" +ary2[0]+"\n" + ary2[1]);
                 textView.setBackgroundColor(Color.rgb(30, 144, 255));
                 textView.setTextColor(0xffffffff);
                 textView.setOnClickListener(new View.OnClickListener() {
@@ -133,63 +139,12 @@ public class MainActivity extends WearableActivity  {
                     }
                 });
 
-
             }
-            if (col == 1 ){
-                textView.setText("Barbara Boxer\nDemocratic Party");
-                textView.setBackgroundColor(Color.rgb(0, 191, 255));
+            else{
+                String[] ary2 = Peeps[col].split(":");
+                textView.setText("2012 Presidential Vote\n"+ary2[0]+ "\n" + ary2[1]+ "\n"+"\n Obama 55% Romney 45%");
+                textView.setBackgroundColor(Color.rgb(30, 144, 255));
                 textView.setTextColor(0xffffffff);
-                textView.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        Intent sendIntent = new Intent(getBaseContext(), WatchToPhoneService.class);
-                        sendIntent.putExtra("zip", "Fred");
-                        startService(sendIntent);
-
-                    }
-                });
-            }
-            if (col == 2 ){
-                if (zip.equals("94401")){
-                    Log.i("DID WE EVEN", "LIKE REALLY GE HERE");
-                    textView.setText("Jackie Spiere\nDemocratic Party");
-                    textView.setBackgroundColor(Color.rgb(0, 255, 255));
-                    textView.setTextColor(0xffffffff);
-                    textView.setOnClickListener(new View.OnClickListener() {
-                        public void onClick(View v) {
-                            Intent sendIntent = new Intent(getBaseContext(), WatchToPhoneService.class);
-                            sendIntent.putExtra("CAT_NAME", "Fred");
-                            startService(sendIntent);
-
-                        }
-                    });
-                }
-                else{
-                    Log.i("NAH","BRO");
-                    textView.setText("Barbara Lee\nDemocratic Party");
-                    textView.setBackgroundColor(Color.rgb(0, 255, 255));
-                    textView.setTextColor(0xffffffff);
-                    textView.setOnClickListener(new View.OnClickListener() {
-                        public void onClick(View v) {
-                            Intent sendIntent = new Intent(getBaseContext(), WatchToPhoneService.class);
-                            sendIntent.putExtra("CAT_NAME", "Fred");
-                            startService(sendIntent);
-
-                        }
-                    });
-                }
-
-            }
-            if (col == 3 ){
-                if (zip.equals("94401")){
-                    textView.setText("2012 Presidential Vote\nCalifornia\nSan Mateo\n Obama 67% Romney 33%");
-                    textView.setBackgroundColor(Color.rgb(30, 144, 255));
-                    textView.setTextColor(0xffffffff);
-                }
-                else{
-                    textView.setText("2012 Presidential Vote\nCalifornia\nAlameda\n Obama 55% Romney 45%");
-                    textView.setBackgroundColor(Color.rgb(30, 144, 255));
-                    textView.setTextColor(0xffffffff);
-                }
 
             }
 
